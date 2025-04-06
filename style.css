@@ -1,4 +1,4 @@
-:root{
+:root {
   --header-bg-color: #111;
   --primary-color: #1e90ff;
   --secondary-color: #f0f0f0;
@@ -18,18 +18,26 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: var(--font-family);
   color: #fff;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
   color: inherit;
   background: none;
@@ -42,7 +50,8 @@ a {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -116,7 +125,7 @@ header {
 
 /* Hero Section */
 .hero {
-  background-image: url('./images/title-img.webp');
+  background-image: url('./images/title-img.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,7 +139,7 @@ header {
 }
 
 .hero-content {
-  
+
   padding: 40px;
   border-radius: 12px;
   max-width: 800px;
@@ -344,12 +353,14 @@ header {
   .main-title-text {
     font-size: 2.5rem;
   }
-  
-  .about-title-text, .game-title-text {
+
+  .about-title-text,
+  .game-title-text {
     font-size: 2rem;
   }
-  
-  .about-subtitle-text, .game-subtitle-text {
+
+  .about-subtitle-text,
+  .game-subtitle-text {
     font-size: 1rem;
   }
 }
@@ -369,36 +380,38 @@ header {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  #menu-toggle:checked ~ .nav-links {
+  #menu-toggle:checked~.nav-links {
     display: flex;
   }
-  
+
   .hero {
     min-height: 450px;
   }
-  
+
   .main-title-text {
     font-size: 2rem;
     letter-spacing: 2px;
   }
-  
+
   .main-subtitle-text {
     font-size: 1rem;
     letter-spacing: 1px;
   }
-  
-  .about-title-text, .game-title-text {
+
+  .about-title-text,
+  .game-title-text {
     font-size: 1.75rem;
     letter-spacing: 2px;
   }
-  
+
   .footer-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
-  .footer-links, .footer-social {
+
+  .footer-links,
+  .footer-social {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -410,25 +423,28 @@ header {
   .hero-content {
     padding: 25px 15px;
   }
-  
+
   .main-title-text {
     font-size: 1.5rem;
     letter-spacing: 1px;
   }
-  
-  .about-title-text, .game-title-text {
+
+  .about-title-text,
+  .game-title-text {
     font-size: 1.5rem;
     letter-spacing: 1px;
   }
-  
-  .about-subtitle-text, .game-subtitle-text, .card-description {
+
+  .about-subtitle-text,
+  .game-subtitle-text,
+  .card-description {
     font-size: 0.9rem;
   }
-  
+
   .colonne-title {
     font-size: 1.2rem;
   }
-  
+
   .card {
     padding: 20px 15px;
   }
@@ -440,19 +456,23 @@ header {
 .contact {
   background-color: var(--background-color);
   padding: 60px 0;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
 }
+
 .contact-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 50px;
 }
-.contact-form{
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -465,10 +485,12 @@ header {
   border: 2px solid black;
   padding: 10px;
 }
+
 .input-email {
   border: 2px solid black;
   padding: 10px;
 }
+
 .input-text {
   border: 2px solid black;
   padding: 10px;
@@ -493,16 +515,19 @@ header {
   margin-top: 30px;
   justify-content: center;
 }
+
 .social-link {
   width: 40px;
   height: auto;
-  
+
 }
+
 .social-link img {
   width: 100%;
   height: auto;
-  
+
 }
+
 /*contact end */
 /*footer start */
 
@@ -516,6 +541,7 @@ header {
 .politic-link {
   text-decoration: underline;
 }
+
 .trems-link {
   text-decoration: underline;
 }
@@ -528,6 +554,7 @@ header {
   background-color: var(--background-secondary-color);
   color: var(--text-color-secondary);
 }
+
 .politic-container {
   display: flex;
   flex-direction: column;
@@ -538,9 +565,11 @@ header {
   gap: 20px;
 
 }
+
 .politic-title {
   font-size: 25px;
 }
+
 .politic-subtitle {
   font-size: 20px;
 }
@@ -552,6 +581,7 @@ header {
   padding: 50px 150px;
   background-color: var(--background-secondary-color);
 }
+
 .trems-container {
   display: flex;
   flex-direction: column;
@@ -563,24 +593,29 @@ header {
 @media (max-width: 768px) {
   .trems {
     padding: 20px 60px;
-    
+
   }
-  .politic-title{
+
+  .politic-title {
     font-size: 20px;
   }
-  .politic-subtitle{
+
+  .politic-subtitle {
     font-size: 18px;
   }
 }
+
 @media (max-width: 400px) {
   .trems {
     padding: 20px 60px;
-    
+
   }
-  .politic-title{
+
+  .politic-title {
     font-size: 18px;
   }
-  .politic-subtitle{
+
+  .politic-subtitle {
     font-size: 16px;
   }
 }
@@ -588,3 +623,786 @@ header {
 /*trems end */
 
 
+
+/*footer end */
+
+/* STORY PAGE STYLES */
+
+/* Story Hero Section */
+.story-hero {
+  background-image: url('./images/title-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.story-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.story-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.story-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--text-color-secondary);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Story Intro Section */
+.story-intro {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.story-intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.story-intro-content {
+  max-width: 900px;
+}
+
+/* Story Journey Section */
+.story-journey {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.story-journey-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.story-journey-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Story World Section */
+.story-world {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.story-world-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.story-world-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Story Mystery Section */
+.story-mystery {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.story-mystery-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.story-mystery-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Story Legends Section */
+.story-legends {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.story-legends-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.story-legends-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Story Reflection Section */
+.story-reflection {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.story-reflection-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.story-reflection-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Story CTA Section */
+.story-cta {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.story-cta-wrapper {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.story-cta-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Story Cards Section */
+.story-cards {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.story-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.story-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-secondary-color);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  gap: 30px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.story-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.story-card-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.story-card-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Common Story Elements */
+.story-heading {
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.story-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.story-image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.story-figure {
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.story-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.story-caption {
+  color: var(--text-color-secondary);
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Media Queries for Story Page */
+@media (max-width: 1024px) {
+  .story-title {
+    font-size: 3rem;
+  }
+
+  .story-heading {
+    font-size: 2.3rem;
+  }
+
+  .story-text {
+    font-size: 1.1rem;
+  }
+
+  .story-cta-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-hero {
+    min-height: 450px;
+  }
+
+  .story-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .story-heading {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .story-text {
+    font-size: 1rem;
+  }
+
+  .story-cta-text {
+    font-size: 1.4rem;
+  }
+
+  .story-intro,
+  .story-journey,
+  .story-world,
+  .story-mystery,
+  .story-legends,
+  .story-reflection,
+  .story-cta,
+  .story-cards {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-hero {
+    min-height: 350px;
+  }
+
+  .story-hero-content {
+    padding: 25px 15px;
+  }
+
+  .story-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .story-heading {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+  }
+
+  .story-text {
+    font-size: 0.95rem;
+  }
+
+  .story-cta-text {
+    font-size: 1.2rem;
+  }
+
+  .story-card {
+    padding: 20px 15px;
+  }
+
+  .story-card-text {
+    font-size: 0.95rem;
+  }
+
+  .story-caption {
+    font-size: 0.9rem;
+  }
+}
+
+/* Gameplay Hero Section */
+.gameplay-hero {
+  background-image: url("./images/title-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.gameplay-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gameplay-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.gameplay-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--text-color-secondary);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Adding the new gameplay page styles to the existing CSS file */
+
+/* Gameplay Hero Section */
+.gameplay-hero {
+  background-image: url("./images/title-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.gameplay-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gameplay-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.gameplay-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--text-color-secondary);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Gameplay Intro Section */
+.gameplay-intro {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.gameplay-intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gameplay-intro-content {
+  max-width: 900px;
+}
+
+/* Gameplay Basics Section */
+.gameplay-basics {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.gameplay-basics-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.gameplay-basics-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Gameplay Tips Section */
+.gameplay-tips {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.gameplay-tips-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.gameplay-tips-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Gameplay Difficult Section */
+.gameplay-difficult {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.gameplay-difficult-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.gameplay-difficult-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Gameplay Finale Section */
+.gameplay-finale {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.gameplay-finale-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.gameplay-finale-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Gameplay Additional Section */
+.gameplay-additional {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.gameplay-additional-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.gameplay-additional-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Gameplay CTA Section */
+.gameplay-cta {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.gameplay-cta-wrapper {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.gameplay-cta-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.gameplay-download-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
+}
+
+.gameplay-download-btn:hover {
+  background-color: #0066cc;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.6);
+}
+
+/* Gameplay Cards Section */
+.gameplay-cards {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.gameplay-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.gameplay-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-secondary-color);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  gap: 30px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gameplay-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.gameplay-card-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.gameplay-card-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Common Gameplay Elements */
+.gameplay-heading {
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.gameplay-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.gameplay-image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.gameplay-figure {
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.gameplay-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.gameplay-caption {
+  color: var(--text-color-secondary);
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Media Queries for Gameplay Page */
+@media (max-width: 1024px) {
+  .gameplay-title {
+    font-size: 3rem;
+  }
+
+  .gameplay-heading {
+    font-size: 2.3rem;
+  }
+
+  .gameplay-text {
+    font-size: 1.1rem;
+  }
+
+  .gameplay-cta-text {
+    font-size: 1.6rem;
+  }
+
+  .gameplay-download-btn {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gameplay-hero {
+    min-height: 450px;
+  }
+
+  .gameplay-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .gameplay-heading {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .gameplay-text {
+    font-size: 1rem;
+  }
+
+  .gameplay-cta-text {
+    font-size: 1.4rem;
+  }
+
+  .gameplay-download-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .gameplay-intro,
+  .gameplay-basics,
+  .gameplay-tips,
+  .gameplay-difficult,
+  .gameplay-finale,
+  .gameplay-additional,
+  .gameplay-cta,
+  .gameplay-cards {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .gameplay-hero {
+    min-height: 350px;
+  }
+
+  .gameplay-hero-content {
+    padding: 25px 15px;
+  }
+
+  .gameplay-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .gameplay-heading {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+  }
+
+  .gameplay-text {
+    font-size: 0.95rem;
+  }
+
+  .gameplay-cta-text {
+    font-size: 1.2rem;
+  }
+
+  .gameplay-download-btn {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+
+  .gameplay-card {
+    padding: 20px 15px;
+  }
+
+  .gameplay-card-text {
+    font-size: 0.95rem;
+  }
+
+  .gameplay-caption {
+    font-size: 0.9rem;
+  }
+}
